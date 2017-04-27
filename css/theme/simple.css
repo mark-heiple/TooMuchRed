@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+ 
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: white;
+  background-color: white; }
+
+
+/*
+this is text color
+*/
+.reveal {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  
+  /*
+  #009ACD is the blue from the water show
+  choose something else to change the color
+  
+  a40000 is dark red
+  */
+  color:  #a40000; }
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5 {
+  margin: 0 0 20px 0;
+  
+  /*
+  #009ACD is the blue from the water show
+  choose something else to change the color
+  */
+  color:  #a40000;
+  font-family: "News Cycle", Impact, sans-serif;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: none;}
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+ 
+.reveal h6 {
+  color:  white;}
+.reveal p  {
+  color:  black;}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  /*
+  darkblue is the blue from the water show
+  choose something else to change the color
+  dark red is too close to a40000
+  */
+  color: darkgreen;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: lightgreen;
+  text-shadow: none;
+  border: none; }
+
+/*
+don't know what this does
+*/
+.reveal .roll span:after {
+  color: #fff;
+  background: #3f0000; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+
+
+/*
+border-color is the border that appears around images when hovering over them
+*/
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: darkred;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+/*
+color of arrows in lower right corner
+*/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: darkred; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: darkred; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: darkred; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: darkred; }
+
+/*
+colors of arrows when mouse hovers over them
+*/
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #f10000; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #f10000; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #f10000; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #f10000; }
+
+/*********************************************
+ * PROGRESS BAR along bottom of window
+ * background: color;
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+/*
+
+*/
+.reveal .progress span {
+  background: darkred;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ * color: color;
+ *********************************************/
+
+  /*
+  #009ACD is the blue from the water show
+  choose something else to change the color
+  */
+.reveal .slide-number {
+  color: darkred; }
