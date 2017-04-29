@@ -1,0 +1,69 @@
+Category: FRED > Categories > National Accounts > Federal Government Debt
+Link: https://fred.stlouisfed.org/categories/5
+README File Created: 2017-03-11
+FRED (Federal Reserve Economic Data)
+Economic Research Division
+Federal Reserve Bank of St. Louis
+
+Series files in the data directory sorted by series id:
+
+File                                    ;Title; Units; Frequency; Seasonal Adjustment; Last Updated
+FDHBATN.csv                             ;Federal Debt Held by Agencies and Trusts; Mil. of $; Q; NSA; 2017-03-03
+FDHBFIN.csv                             ;Federal Debt Held by Foreign and International Investors; Bil. of $; Q; NSA; 2017-03-03
+FDHBFRBN.csv                            ;Federal Debt Held by Federal Reserve Banks; Bil. of $; Q; NSA; 2017-03-03
+FDHBPI.csv                             ;Federal Debt Held by Private Investors; Bil. of $; Q; NSA; 2017-03-03
+FYFR.csv                                ;Federal Receipts; Mil. of $; A; NSA; 2017-01-09
+FYFRGDA188S.csv                         ;Federal Receipts as Percent of Gross Domestic Product; % of GDP; A; NSA; 2017-02-28
+FYFSD.csv                               ;Federal Surplus or Deficit [-]; Mil. of $; A; NSA; 2017-01-09
+FYFSGDA188S.csv                         ;Federal Surplus or Deficit [-] as Percent of Gross Domestic Product; % of GDP; A; NSA; 2017-02-28
+FYGDP.csv                               ;Gross Domestic Product; Bil. of $; A; NSA; 2016-03-15
+FYGFD.csv                               ;Gross Federal Debt; Bil. of $; A; NSA; 2016-03-14
+FYGFDPUB.csv                            ;Gross Federal Debt Held by the Public; Bil. of $; A; NSA; 2016-03-14
+FYGFGDQ188S.csv                         ;Federal Debt Held by the Public as Percent of Gross Domestic Product; % of GDP; Q; SA; 2016-12-22
+FYOIGDA188S.csv                         ;Federal Outlays: Interest as Percent of Gross Domestic Product; % of GDP; A; NSA; 2017-02-28
+FYOINT.csv                              ;Federal Outlays: Interest; Mil. of $; A; NSA; 2017-01-09
+FYONET.csv                              ;Federal Net Outlays; Mil. of $; A; NSA; 2017-01-09
+FYONGDA188S.csv                         ;Federal Net Outlays as Percent of Gross Domestic Product; % of GDP; A; NSA; 2017-02-28
+FYPUGDA188S.csv                         ;Gross Federal Debt Held by the Public as Percent of Gross Domestic Product; % of GDP; A; NSA; 2016-07-29
+GFDEBTN.csv                             ;Federal Debt: Total Public Debt; Mil. of $; Q; NSA; 2017-03-03
+GFDEGDQ188S.csv                         ;Federal Debt: Total Public Debt as Percent of Gross Domestic Product; % of GDP; Q; SA; 2016-12-22
+GFDGDPA188S.csv                         ;Gross Federal Debt as Percent of Gross Domestic Product; % of GDP; A; NSA; 2016-07-29
+
+Abbreviations:
+
+Frequency
+   A = Annual
+   SA = Semiannual
+   Q = Quarterly
+   M = Monthly
+   BW = Biweekly
+   W = Weekly
+   D = Daily
+Seasonal Adjustment
+   SA = Seasonally Adjusted
+   NSA = Not Seasonally Adjusted
+   SAAR = Seasonally Adjusted Annual Rate
+   SSA = Smoothed Seasonally Adjusted
+   NA = Not Applicable
+
+Directories are limited to 1000 files or less.
+Subdirectories are created recursively for each character in a series ID until 1000 or fewer series IDs match a substring.
+Most zip files contain less than 1000 files and do not contain additional subdirectories.
+
+
+Other sources
+USDebt.xls - total debt in dollars from 1900 - 2015
+
+hist01z1.xls - summary of receipts, outlays, and surpluses/deficits: 1789 - 2021
+hist01z2.xls - summary of receipts, outlays, and surpluses/deficits as of % GDP: 1930-2021
+hist02z1.xls - receipts by source: 1934 - 2021
+hist02z3.xls - receipts by source as % of GDP: 1934 - 2021
+hist03z1.xls - outlays by superfunction and function: 1940 - 2021
+hist04z1.xls - outlays by agency: 1962 - 2021
+hist04z2.xls - % distribution of outlays by agency: 1962 - 2021
+hist07z1.xls - federal debt at and of year: 1940-2021
+hist08z2.xls - outlays by category in constant 2009 dollars: 1962-2021
+hist08z3.xls - % distribution of outlays by category: 1962-2021
+hist08z4.xls - outlays by category as % GDP: 1962-2021
+hist08z6.xls - outlays for mandatory programs in constant 2009 dollars: 1962 - 2021
+hist08z8.xls - outlays for discretionary programs in constant 2009 dollars: 1962 - 2021
