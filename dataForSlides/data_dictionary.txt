@@ -1,0 +1,187 @@
+receipts_outlays.csv
+---------------------
+This file contains overall GDP, outlays, receipts, and surplus/deficets from 1940-2015. It includes values in current dollars, 2009 dollars, and % GDP. This comes from hist01z1.xls, hist01z2.xls, hist01z3.xls, hist10z1.xls
+
+Note: the % GDP values are calculated by current dollars/current GDP. It does NOT use the 2009 values. The defator value used to calculate 2009 GDP and outlay values are different for some reason. All dollar amounts are millions.
+
+"Year"                       : 1940 - 2015
+"GDP"                        : GDP in current (unadjusted) dollars
+"GDP_deflator"               : deflator value used to calculate GDP_2009
+"GDP_2009"                   : GDP / GDP_deflator
+"Receipts"                   : receipts (taxes) in current dollars
+"Outlays"                    : outlays (spending) in current dollars
+"Surplus"                    : surplus/deficit (receipts-outlays) in current dollars
+"Receipts_2009"              : receipts in 2009 dollars
+"Outlays_2009"               : outlays in 2009 dollars
+"Surplus_2009"               : surplus/deficit in 2009 dollars
+"deflator"                   : deflator value used calculate 2009 values
+"receipts_pct"               : receipts as % of GDP
+"outlays_pct"                : outlays as % of GDP 
+"surplus_pct"                : surplus/deficit as % of GDP
+"outlays_return"             : % change in outlays between year 1 and year 2
+"gdp_return"                 : % change in gdp between year 1 and year 2
+==============================================================================
+
+
+receipts_by_category.csv
+------------------------
+This is a breakdown of receipts by category. Data comes from hist02z1.xls, hist02z2.xls, hist02z3.xls
+
+"Year"                                  :1940-2015
+"Individual.Income.Tax"                 :current dollars
+"Corporate.Income.Tax"                  :current dollars
+"Social.Insurance.and.Retirement"       :current dollars
+"Excise"                                :current dollars
+"Other"                                 :current dollars
+"Total"                                 :total receipts in current dollars (sum of above)
+"individual_pct_receipts"               :as % of total receipts
+"corproate_pct_receipts"                :as % of total receipts
+"social_pct_receipts"                   :as % of total receipts 
+"excise_pct_receipts"                   :as % of total receipts
+"other_pct_receipts"                    :as % of total receipts
+"total_pct_receipts"                    :as % of total receipts (should be 100) 
+"individual_pct_gdp"                    :as % of GDP      
+"corproate_pct_gdp"                     :as % of GDP      
+"social_pct_gdp"                        :as % of GDP      
+"excise_pct_gdp"                        :as % of GDP      
+"other_pct_gdp"                         :as % of GDP      
+"total_pct_gdp"                         :as % of GDP (should match receipts_pct from receipts_outlays.csv)
+
+============================================================================================================
+
+
+All of the outlays_by_category data sets come from hist03z1.xls, outlays by super function and function. The spread sheet has super functions, with some broken down by function. The super function is the sum of its functions.
+
+outlays_by_category_details_pct_gdp.csv
+outlays_by_category_details_pct_outlays.csv
+outlays_by_category_details.csv
+outlays_by_category_full_pct_gdp.csv
+outlays_by_category_full_pct_outlays.csv
+outlays_by_category_full.csv
+outlays_by_category_summary_pct_gdp.csv
+outlays_by_category_summary_pct_outlays.csv
+outlays_by_category_summary.csv
+--------------------------------------------
+
+The data sets are separated as follows:
+outlays_by_category_full_*: data sets contain both super function and functions
+outlays_by_category_details_*: data sets contain only the sub functions, or if none the super function
+outlays_by_category_summary_*: data sets contain only the super function
+
+In addition, each of the _full_, _details_, and _summary_ data sets represent the data as follows:
+(no suffix): data is in current dollars (not adjusted for inflation).
+*_pct_gdp: data is represented as % of GDP
+*_pct_outlays: data is represented as % of total outlays (grand total is 100%)
+
+Individual columns:
+Year                                                     : 1940 - 2015
+National Defense                                         : Super Function
+Human resources                                          : Super Function
+  Education, Training, Employment, and Social Services   : Function of Human resources
+  Health                                                 : Function of Human resources
+  Medicare                                               : Function of Human resources
+  Income Security                                        : Function of Human resources
+  Social Security                                        : Function of Human resources
+  Veterans Benefits and Services                         : Function of Human resources
+Physical resources                                       : Super Function
+  Energy                                                 : Function of Physical resources
+  Natural Resources and Environment                      : Function of Physical resources
+  Commerce and Housing Credit                            : Function of Physical resources
+  Transportation                                         : Function of Physical resources
+  Community and Regional Development                     : Function of Physical resources
+Net interest                                             : Super Function
+Other functions                                          : Super Function
+  International Affairs                                  : Function of Other functions
+  General Science, Space, and Technology                 : Function of Other functions
+  Agriculture                                            : Function of Other functions
+  Administration of Justice                              : Function of Other functions
+  General Government                                     : Function of Other functions
+Undistributed offsetting receipts                        : Super Function
+Total                                                    : Total dollars (matches receipts_outlays.csv[Outlays]),
+                                                            % of GDP (matches receipts_outlays.csv[outlays_pct],
+                                                            or % of Outlays (100%)
+================================================================================================================         
+All of the outlays_by_dept data sets come from hist04z1.xls and hist04z2.xls.
+pct_gdp has values as % GDP
+pct_outlays has values as % outlays (sums to ~100)
+no suffix has values as current dollars
+
+outlays_by_dept_pct_gdp.csv
+outlays_by_dept_pct_outlays.csv
+outlays_by_dept.csv
+-------------------------------
+"Year"  1962-2015
+"Legislative Branch"
+"Judicial Branch"
+"Department of Agriculture"
+"Department of Commerce"
+"Department of Defense--Military Programs"
+"Department of Education"
+"Department of Energy"
+"Department of Health and Human Services"
+"Department of Homeland Security"
+"Department of Housing and Urban Development"
+"Department of the Interior"
+"Department of Justice"
+"Department of Labor"
+"Department of State"
+"Department of Transportation"
+"Department of the Treasury"
+"Department of Veterans Affairs"               
+"Corps of Engineers--Civil Works"
+"Other Defense Civil Programs"
+"Environmental Protection Agency"
+"Executive Office of the President"
+"General Services Administration"
+"International Assistance Programs"
+"National Aeronautics and Space Administration"
+"National Science Foundation"
+"Office of Personnel Management"
+"Small Business Administration"
+"Social Security Administration"
+"Other Independent Agencies"
+"Undistributed Offsetting Receipts"
+"Total"
+===============================================================================================
+
+
+gross_debt.csv
+----------------
+Comes from hist07z1.xls. All dollar amounts are in current (not adjusted for inflation) dollars.
+
+"Year"                            :1940 - 2015
+"Gross Federal Debt"              :grand total debt
+"Government Accounts"             :debt held by government departments,
+"Total Public"                    :total held by public, (Gross Federal Debt - Government Accounts)
+"Federal Reserve System"          :held by Federal Reserve System
+"Other"                           :private investors (Total Public = Other + Federal Reserve System)
+"Gross Federal Debt %GDP"         : all below are same, but as % GDP     
+"Government Accounts %GDP"
+"Total Public %GDP"
+"Federal Reserve System %GDP"
+"Other %GDP"
+
+================================================================================================
+
+discretionary_manditory_outlays_pct_outlays.csv
+-----------------------------------------------
+Comes from hist08z3.xls. This has outlays as a percentage of total outlays for manditory and discretionary spending. This isn't entirely consistant with the other tables. This table is "Budget Enforement Act" outlays, which is different than "Outlays". Not sure this table is useful...
+
+"Year"                                       : 1962 - 2015
+"Total"                                      : total outlays (100%)
+"Total Discretionary"                        : sum(Defense, Non-Defense)
+"Defense"
+"Non-Defense"
+"Total Manditory and Net Interest"          : (Total - Total Discretionary)
+"Total Manditory"                           : (Total Manditory and Net Interest - Net Interest)
+"Total Programmatic"                        : (Total Manditory - Undistributed Offsetting Receipts)
+                                            : also sum(Social Security, 
+                                                       Deposit Insurance, 
+                                                       Means Tested Entitlements, 
+                                                       Other)
+"Social Security"
+"Deposit Insurance"
+"Means Tested Entitlements"
+"Other"
+"Undistributed Offsetting Receipts"
+"Net Interest"
