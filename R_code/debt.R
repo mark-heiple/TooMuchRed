@@ -335,3 +335,12 @@ summary(df8_3)
 head(df8_3)
 
 write.csv(x=df8_3, file="../dataForSlides/discretionary_manditory_outlays_pct_outlays.csv", row.names=FALSE)
+
+
+#---- marginal tax rate ----#
+#from https://commons.wikimedia.org/wiki/File:Historical_Marginal_Tax_Rate_for_Highest_and_Lowest_Income_Earners.jpg
+
+marginal_tax = read.csv("../dataForSlides/marginal_tax.csv",header=TRUE)
+str(marginal_tax)
+head(marginal_tax)
+tail(marginal_tax)
