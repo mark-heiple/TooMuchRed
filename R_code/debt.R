@@ -383,3 +383,10 @@ names(debt_by_decade) = c("Year","Average Debt by % GDP for Decade")
 write.csv(x=debt_by_decade, file="../dataForSlides/debt_by_decade.csv", row.names=FALSE)
 
 
+gdp_current_return = round(diff(totals$GDP)/(totals$GDP[-n])*100,1)
+debt_current_return = round(diff(df7_1$`Gross Federal Debt`)/df7_1$`Gross Federal Debt`[-n]*100,1)
+growth_gdp_debt = data.frame(gdp=gdp_current_return,debt=debt_current_return)
+write.csv(x=growth_gdp_debt, file="../dataForSlides/growth_gdp_debt.csv", row.names=FALSE)
+
+
+
