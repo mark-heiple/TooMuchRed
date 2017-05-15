@@ -344,3 +344,49 @@ marginal_tax = read.csv("../dataForSlides/marginal_tax.csv",header=TRUE)
 str(marginal_tax)
 head(marginal_tax)
 tail(marginal_tax)
+
+
+# make a data set for slide 9: bar chart of debt as %GDP by decade. use df7_1
+year=c()
+debt=c()
+agg_debt = 0
+n = 0
+
+for( i in seq_along(df7_1$Year)) {
+
+  y = df7_1$Year[i]
+  d = df7_1$`Gross Federal Debt %GDP`[i]
+
+  agg_debt = agg_debt + d
+  n = n+1
+  
+  if((y %% 10 == 0) && n > 1 ) {
+    print(y)
+    print(agg_debt/n)
+
+    #use midpoint
+    year = c(year,y-5)
+    debt = c(debt,(agg_debt/n))
+    
+    n = 0
+    agg_debt = 0
+    
+  }
+}
+
+#final
+year = c(year,y)
+debt = c(debt,(agg_debt/n))
+
+debt_by_decade = data.frame(year,round(debt,0))
+names(debt_by_decade) = c("Year","Average Debt by % GDP for Decade")
+write.csv(x=debt_by_decade, file="../dataForSlides/debt_by_decade.csv", row.names=FALSE)
+
+
+gdp_current_return = round(diff(totals$GDP)/(totals$GDP[-n])*100,1)
+debt_current_return = round(diff(df7_1$`Gross Federal Debt`)/df7_1$`Gross Federal Debt`[-n]*100,1)
+growth_gdp_debt = data.frame(gdp=gdp_current_return,debt=debt_current_return)
+write.csv(x=growth_gdp_debt, file="../dataForSlides/growth_gdp_debt.csv", row.names=FALSE)
+
+
+
