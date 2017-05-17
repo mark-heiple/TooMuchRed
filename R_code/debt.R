@@ -389,4 +389,13 @@ growth_gdp_debt = data.frame(gdp=gdp_current_return,debt=debt_current_return)
 write.csv(x=growth_gdp_debt, file="../dataForSlides/growth_gdp_debt.csv", row.names=FALSE)
 
 
+# make us vs world gdp data set
 
+world = read.csv('../data/us_vs_world_gdp.csv')
+head(world)
+world_t = t(world[,-1])
+str(world_t)
+colnames(world_t) = world[,1]
+world_t = data.frame(Year=1960:2015,world_t)
+head(world_t)
+write.csv(x=world_t, file="../dataForSlides/gdp_us_vs_world.csv", row.names=FALSE)
