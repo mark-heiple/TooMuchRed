@@ -197,7 +197,7 @@ keep			: 1 if include on plot, 0 if not
 gdp_us_vs_world.csv
 -------------------
 Year			: Year 1960 - 2015
-United.States	: US GDP, $Billions, FY 2010
+United.States		: US GDP, $Billions, FY 2010
 World			: World GDP, $, FY 2010
 
 debtbypresident.csv
@@ -206,30 +206,30 @@ order			:date order of president
 president		:name of president
 length			:number of years served
 debt			:total debt accumulated in current $Millions
-debt_per_year	:debt/year in current $Millions
+debt_per_year		:debt/year in current $Millions
 debt_2009		:total debt in FY 2009 $Millions
 debt_per_year_2009	:debt/year in FY 2009 $Millions
 party			:D = democrat, R = republican
 
 taxrates.csv
 ------------
-Year				:Year
-Lowest				:lowest individual marginal tax rate (%)
-Highest				:highest individual marginal tax rate (%)
-corporate			:highest corporate marginal tax rate (%)
+Year			:Year
+Lowest			:lowest individual marginal tax rate (%)
+Highest			:highest individual marginal tax rate (%)
+corporate		:highest corporate marginal tax rate (%)
 Receipts			:total Receipts Current $Millions
 Receipts_2009		:totalReceipts FY 2009 $Millions
-Receipts_pct_gdp	:total receipts, % GDP
+Receipts_pct_gdp		:total receipts, % GDP
 Receipts_Ind_pct_gdp	:receipts from individual tax, % GDP 
 Receipts_corp_pct_gdp	:receipts from corporate tax, % GDP
 
 growth_gdp_debt.csv
 -------------------
-year 				:year 1941-2015
-gdp					:growth in GDP over previous year (%)
-debt				:growth in debt over previous year (%)
+year 			:year 1941-2015
+gdp			:growth in GDP over previous year (%)
+debt			:growth in debt over previous year (%)
 
 gdp_top15.csv
 --------------
-country				:country name
+country			:country name
 gdp_2015			:GDP $ in 2015
